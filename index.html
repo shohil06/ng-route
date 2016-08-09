@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     <!-- <script src="../includes/js/angular-route.js"></script> -->
+    <script src="script.js"></script>
 
     </head>
     <body>
@@ -24,14 +25,14 @@
             </div>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
-              <li><a href="/"><i class="fa fa-shield"></i>About Me</a></li>
-              <li><a href="/"><i class="fa fa-comment"></i>Contact Me</a></li>
+              <li><a href="#about"><i class="fa fa-shield"></i>About Me</a></li>
+              <li><a href="#contact"><i class="fa fa-comment"></i>Contact Me</a></li>
             </ul>
           </nav>
         </header>
 
         <!-- Injected Views and Main Content -->
-        <div class="main">
+        <div id="main">
           <!-- Angular Templating -->
           <!-- This is the place where the contene will be injected -->
           {{message}}
@@ -39,6 +40,5 @@
           <div ng-view>
           </div>
         </div>
-        <script src="../includes/js/script.js"></script>
       </body>
     </html>
